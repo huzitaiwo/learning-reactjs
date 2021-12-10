@@ -7,11 +7,12 @@ export default function Create() {
   const [title, setTitle] = useState('')
   const [method, setMethod] = useState('')
   const [cookingTime, setCookingTime] = useState('')
-  const [ingredients, setIngredients] = useState('')
 
   const handleSubmit = e => {
     e.preventDefault()
-    console.log(title, method, cookingTime)
+    setTitle('')
+    setMethod('')
+    setCookingTime('')
   }
 
   return (
@@ -40,7 +41,7 @@ export default function Create() {
         value={method}
       />
       </label>
-      <button>submit</button>
+      <button className='btn'>submit</button>
     </form>
   )
 }
