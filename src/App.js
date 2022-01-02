@@ -7,6 +7,7 @@ import "./App.css";
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import Article from './pages/Article'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
+          <Route path="/artlcles/:id"></Route>
         </Switch>
       </BrowserRouter>
     </div>
