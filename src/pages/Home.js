@@ -1,10 +1,19 @@
 import { useFetch } from '../hooks/useFetch';
 
 export default function Home() {
+  const { data: articles, isPending, error} = useFetch('http://localhost:4000/articles')
+  
+
   return (
-    <div>
-      <h2>Homepage</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, cumque provident. Vero vitae molestias, blanditiis, labore maxime esse dolore sunt officiis facilis sit unde dolor expedita voluptatem sapiente laboriosam quo.</p>
+    <div className='home'>
+      {isPending && <h2>Loading...</h2>}
+      {error && <h2>{error}</h2>}
+      {articles && articles.map(article => (
+        <div key={article.id} className='card'>
+          <h3>{article.title}</h3>
+          <p>{article.author}</p>
+        </div>
+      ))}
     </div>
   )
 }
