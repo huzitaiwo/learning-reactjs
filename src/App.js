@@ -31,7 +31,9 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/artlcles/:id"></Route>
+          <Route path="/articles/:id">
+            <Article />
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>
