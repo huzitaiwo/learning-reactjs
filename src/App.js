@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom'
-import { useFetch } from './hooks/useFetch';
 
 // styles
 import "./App.css";
