@@ -29,12 +29,6 @@ export default function Create() {
     ingredientInput.current.focus()
   }
 
-  // const resetForm = () => {
-  //   setTitle('')
-  //   setMethod('')
-  //   setCookingTime('')
-  // }
-
   return (
     <form className='create' onSubmit={handleSubmit}>
 
