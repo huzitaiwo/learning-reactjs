@@ -7,7 +7,7 @@ export default function Trip() {
   const [trips, setTrips] = useState([])
   const [url, setUrl] = useState('http://localhost:8000/trips')
 
-  useEffect(() => {
+  useEffect((url) => {
     fetch()
       .then(res => res.json())
       .then(json => setTrips(json))
