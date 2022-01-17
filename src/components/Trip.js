@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react"
 
+// styles
+import './Trip.css'
 
 export default function Trip() {
   const [trips, setTrips] = useState([])
+  const [url, setUrl] = useState('http://localhost:8000/trips')
 
   useEffect(() => {
-    fetch('http://localhost:8000/trips')
+    fetch()
       .then(res => res.json())
-      .then(json => console.log(json))
-  }, [])
+      .then(json => setTrips(json))
+  }, [url])
 
   
 
@@ -16,7 +19,6 @@ export default function Trip() {
   return (
     <div className="trip-list">
       <h2>Trip List</h2>
-
       <ul>
         {trips.map(trip => {
           <li key={trip.id}>
