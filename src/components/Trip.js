@@ -14,7 +14,7 @@ export default function Trip() {
 
 
   return (
-    <div>
+    <div className="trip-list">
       <h2>Trip List</h2>
 
       <ul>
