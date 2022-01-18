@@ -27,7 +27,10 @@ export default function Trip() {
           </li>
         ))}
       </ul>
-
+      <div className="filters">
+        <button onClick={setTrips('http://localhost:8000/trips?loc=europe')}>European Trips</button>
+        <button  onClick={setTrips('http://localhost:8000/trips')}>All trips</button>
+      </div>
     </div>
   )
 }
