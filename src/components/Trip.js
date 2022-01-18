@@ -13,8 +13,6 @@ export default function Trip() {
       .then(json => setTrips(json))
   }, [url])
 
-  console.log(trips)
-
 
   return (
     <div className="trip-list">
@@ -28,8 +26,8 @@ export default function Trip() {
         ))}
       </ul>
       <div className="filters">
-        <button onClick={setTrips('http://localhost:8000/trips?loc=europe')}>European Trips</button>
-        <button  onClick={setTrips('http://localhost:8000/trips')}>All trips</button>
+        <button onClick={() => setUrl('http://localhost:8000/trips?loc=europe')}>European Trips</button>
+        <button  onClick={() => setUrl('http://localhost:8000/trips')}>All trips</button>
       </div>
     </div>
   )
