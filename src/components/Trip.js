@@ -1,10 +1,10 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 
 export default function Trip() {
   const [trips, setTrips] = useState([])
 
-
+  useEffect()
 
   fetch('http://localhost:8000/trips')
     .then(res => res.json())
