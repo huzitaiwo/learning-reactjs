@@ -5,7 +5,7 @@ import './Trip.css'
 
 export default function Trip() {
   const [trips, setTrips] = useState([])
-  const [url, setUrl] = useState('http://localhost:8000/trips')
+  const [url, setUrl] = useState('http://localhost:4000/trips')
 
   useEffect(() => {
     fetch(url)
@@ -26,8 +26,8 @@ export default function Trip() {
         ))}
       </ul>
       <div className="filters">
-        <button onClick={() => setUrl('http://localhost:8000/trips?loc=europe')}>European Trips</button>
-        <button  onClick={() => setUrl('http://localhost:8000/trips')}>All trips</button>
+        <button onClick={() => setUrl('http://localhost:4000/trips?loc=europe')}>European Trips</button>
+        <button  onClick={() => setUrl('http://localhost:4000/trips')}>All trips</button>
       </div>
     </div>
   )
