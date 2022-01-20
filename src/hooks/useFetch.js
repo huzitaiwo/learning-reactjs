@@ -1,11 +1,11 @@
 import { useEffect, useState} from 'react'
 
-export const useFetch = url => {
+const useFetch = url => {
   const [data, setData] = useState()
   const [isPending, setIsPending] = useState()
   const [error, setError] = useState()
 
-  useFetch(() => {
+  useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(url)
       const json = await res.json()
@@ -17,5 +17,7 @@ export const useFetch = url => {
   }, [url])
 
   return { data, isPending, error }
-  
+
 }
+
+export default useFetch

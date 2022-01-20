@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { useFetch } from "../hooks/useFetch"
 
 // styles
@@ -6,14 +6,14 @@ import './Trip.css'
 
 export default function Trip() {
   const [url, setUrl] = useState('http://localhost:4000/trips')
-  const { data: trips } = useFetch()
+  const { data: trips } = useFetch(url)
 
 
   return (
     <div className="trip-list">
       <h2>Trip List</h2>
       <ul>
-        {trips.map(trip => (
+        {trips && trips.map(trip => (
           <li key={trip.id}>
             <h3>{trip.title}</h3>
             <p>{trip.price}</p>
