@@ -23,7 +23,7 @@ export default function Trip() {
       </ul>
       <div className="filters">
         <button onClick={() => setUrl('http://localhost:4000/trips?loc=europe')}>European Trips</button>
-        <button  onClick={() => setUrl('http://localhost:4000/trips')}>All trips</button>
+        <button onClick={() => setUrl('http://localhost:4000/trips')}>All trips</button>
       </div>
     </div>
   )
