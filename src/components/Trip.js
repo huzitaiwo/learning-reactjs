@@ -1,17 +1,12 @@
 import { useEffect, useState } from "react"
+import { useFetch } from "../hooks/useFetch"
 
 // styles
 import './Trip.css'
 
 export default function Trip() {
-  const [trips, setTrips] = useState([])
   const [url, setUrl] = useState('http://localhost:4000/trips')
-
-  useEffect(() => {
-    fetch(url)
-      .then(res => res.json())
-      .then(json => setTrips(json))
-  }, [url])
+  const { data: trips } = useFetch()
 
 
   return (
