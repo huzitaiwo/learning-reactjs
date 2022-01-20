@@ -16,7 +16,7 @@ const useFetch = url => {
     fetchData()
   }, [url])
 
-  return { data, isPending, error }
+  return { data }
 
 }
 
