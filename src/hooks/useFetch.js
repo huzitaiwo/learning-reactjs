@@ -12,5 +12,10 @@ export const useFetch = url => {
 
       setData(json)
     }
+
+    fetchData()
   }, [url])
+
+  return { data, isPending, error }
+  
 }
