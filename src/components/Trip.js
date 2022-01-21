@@ -16,7 +16,7 @@ export default function Trip() {
       {error && <h3>{error}</h3>}
       <ul>
         {trips && trips.map(trip => (
-          <li key={trip.id}>
+          <li key={trip.id} style={{bacground: "url(../../public/trip.jpg);"}}>
             <h3>{trip.title}</h3>
             <p>{trip.price}</p>
           </li>
