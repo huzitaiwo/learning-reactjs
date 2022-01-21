@@ -6,6 +6,8 @@ export const useFetch = url => {
   const [error, setError] = useState(null)
 
   useEffect(() => {
+    const controller = new AbortController()
+
     const fetchData = async () => {
       setIsPending(true)
 
@@ -29,6 +31,10 @@ export const useFetch = url => {
     }
 
     fetchData()
+
+    return () => {
+
+    }
   }, [url])
 
   return { data, isPending, error }
