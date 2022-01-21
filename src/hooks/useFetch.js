@@ -15,8 +15,11 @@ export const useFetch = url => {
 
         setIsPending(false)
         setData(json)
+        setError(null)
       } catch(err) {
+        setIsPending(false)
         setError('Could not fetch the data')
+        console.log(err.message)
       }
 
     }
