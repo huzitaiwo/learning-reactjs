@@ -13,6 +13,7 @@ export default function Trip() {
     <div className="trip-list">
       <h2>Trip List</h2>
       {isPending && <h3>Loading...</h3>}
+      {error && <h3>{error}</h3>}
       <ul>
         {trips && trips.map(trip => (
           <li key={trip.id}>
