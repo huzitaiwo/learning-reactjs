@@ -9,11 +9,16 @@ export const useFetch = url => {
     const fetchData = async () => {
       setIsPending(true)
 
-      const res = await fetch(url)
-      const json = await res.json()
+      try{
+        const res = await fetch(url)
+        const json = await res.json()
 
-      setIsPending(false)
-      setData(json)
+        setIsPending(false)
+        setData(json)
+      } catch(err) {
+        setError('Could not fetch the data')
+      }
+
     }
 
     fetchData()
