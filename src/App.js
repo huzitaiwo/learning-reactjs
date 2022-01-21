@@ -10,6 +10,26 @@ import './App.css'
 
 export default function App() {
   const [showModal, setShowModal] = useState(false)
+  const [showEvents, setShowEvents] = useState([])
+
+  const [events, setEvents] = useState([
+    {title: "mario's birthday bash", id: 1},
+    {title: "bowser's live stream", id: 2},
+    {title: "race on moo moo farm", id: 3}
+  ])
+
+  const handleClick = (id) => {
+    setEvents(prevEvents => {
+      return prevEvents.filter(event => id !== event.id)
+    })
+  }
+
+  const handleClose = () => {
+    setShowModal(false)
+  }
+
+  const subtitle = "All the latest events in Marioland"
+
 
   const handleClose = () => {
     setShowModal(false)
