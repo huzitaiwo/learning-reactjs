@@ -5,7 +5,7 @@ import { useFetch } from "../hooks/useFetch"
 import './Trip.css'
 
 export default function Trip() {
-  const [url, setUrl] = useState('http://localhost:4000/trips')
+  const [url, setUrl] = useState('http://localhost:4000/tripssss')
   const { data: trips, isPending, error } = useFetch(url)
 
 
