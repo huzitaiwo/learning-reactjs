@@ -4,6 +4,9 @@ import { useFetch } from "../hooks/useFetch"
 // styles
 import './Trip.css'
 
+// images
+import bg from './src/trip.jpg'
+
 export default function Trip() {
   const [url, setUrl] = useState('http://localhost:4000/trips')
   const { data: trips, isPending, error } = useFetch(url)
@@ -16,7 +19,7 @@ export default function Trip() {
       {error && <h3>{error}</h3>}
       <ul>
         {trips && trips.map(trip => (
-          <li key={trip.id}>
+          <li key={trip.id} style={{ backgroundImage: `url({bg})` }}>
             <h3>{trip.title}</h3>
             <p>{trip.price}</p>
           </li>
