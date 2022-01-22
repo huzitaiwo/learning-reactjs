@@ -4,9 +4,6 @@ import { useFetch } from "../hooks/useFetch"
 // styles
 import './Trip.css'
 
-// images
-import bg from "./trip.jpg"
-
 export default function Trip() {
   const [url, setUrl] = useState('http://localhost:4000/trips')
   const { data: trips, isPending, error } = useFetch(url)
