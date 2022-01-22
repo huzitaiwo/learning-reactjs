@@ -16,7 +16,7 @@ export default function Trip() {
       {error && <h3>{error}</h3>}
       <ul>
         {trips && trips.map(trip => (
-          <li key={trip.id} style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover' }}>
+          <li key={trip.id} style={{ backgroundImage: "url(./image/trip.jpg)", backgroundSize: 'cover', backgroundPosition: "right" }}>
             <h3>{trip.title}</h3>
             <p>{trip.price}</p>
           </li>
