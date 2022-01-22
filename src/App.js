@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 // components
 import Modal from './component/Modal'
+import Title from './component/Title'
 
 // styles
 import './App.css'
@@ -31,14 +32,26 @@ export default function App() {
   const subtitle = "All the latest events in Marioland"
 
 
-  const handleClose = () => {
-    setShowModal(false)
-  }
-
-
   return (
     <div className="app">
-      <h1 className="title">App Component</h1>
+      <Title title="Marioland Events" subtitle={subtitle} />
+      
+      {showEvents && (
+        <div>
+          <button onClick={() => setShowEvents(false)}>Hide Events</button>
+        </div>
+      )}
+      {!showEvents && (
+        <div>
+          <button onClick={() => setShowEvents(true)}>Show Events</button>
+        </div>
+      )}
+      {showEvents && events.map((event, index) => (
+        <React.Fragment key={event.id}>
+          <h2>{index} - {event.title}</h2>
+          <button onClick={() => handleClick(event.id)}>delete event</button>
+        </React.Fragment>
+      ))}
       
       {showModal && <Modal handleClose={handleClose}>
         <h2>Terms and Conditions</h2>
