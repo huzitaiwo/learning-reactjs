@@ -13,7 +13,8 @@ const cardImages = [
 
 
 function App() {
-  const [cards, setCards] = useState()
+  const [cards, setCards] = useState([])
+  const [turns, setTurns] = useState(0)
 
   // shuffle cards
   const shuffleCards = () => {
