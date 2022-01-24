@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 // components
 import Modal from './component/Modal'
 
@@ -5,7 +7,9 @@ import Modal from './component/Modal'
 import './App.css'
 
 
+
 export default function App() {
+  const [showModal, setShowModal] = useState(true)
   return (
     <div className="app">
       <h1 className="title">App Component</h1>
