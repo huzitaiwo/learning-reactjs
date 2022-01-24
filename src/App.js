@@ -9,7 +9,10 @@ export default function App() {
   return (
     <div className="app">
       <h1 className="title">App Component</h1>
-      <Modal />
+      <Modal>
+        <h2>10% Off Coupon Code</h2>
+        <p>Use the code NINJA10 at the checkout.</p>
+      </Modal>
     </div>
   )
 }
