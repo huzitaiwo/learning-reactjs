@@ -5,6 +5,11 @@ export default function EventForm() {
   const [title, setTitle] = useState('')
   const [date, setDate] = useState('')
 
+  const resetForm = () => {
+    setTitle('')
+    setDate('')
+  }
+
 
   return (
     <form className="event-form">
@@ -12,14 +17,19 @@ export default function EventForm() {
         <span>Event Title:</span>
         <input 
           type="text" 
-          onChange={e => setTitle(e.target.value)}/>
+          onChange={e => setTitle(e.target.value)}
+          value={title}
+        />
       </label>
       <label>
         <span>Event Date:</span>
         <input 
           type="date" 
-          onChange={e => setDate(e.target.value)} />
+          onChange={e => setDate(e.target.value)} 
+          value={date}
+        />
       </label>
+      <p>date- {date}, title- {title}</p>
       <button>Submit</button>
     </form> 
   )
