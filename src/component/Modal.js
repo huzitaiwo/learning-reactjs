@@ -3,12 +3,12 @@ import ReactDom from 'react-dom'
 // styles
 import './Modal.css'
 
-export default function Modal({ children, handleClose }) {
+export default function Modal({ children, handleClose, isSalesModal }) {
   return ReactDom.createPortal((
     <div className="modal-backdrop">
       <div className="modal" style={{
-        border: "1px solid",
-        borderColor: "#141414",
+        border: "3px solid",
+        borderColor: isSalesModal ? "#333" : "#141414",
         textAlign: "left"
         }}>
         {children}
