@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 // components
 import Modal from './component/Modal'
 import Title from './component/Title'
+import EventList from './component/EventList'
 
 // styles
 import './App.css'
@@ -46,12 +47,7 @@ export default function App() {
           <button onClick={() => setShowEvents(true)}>Show Events</button>
         </div>
       )}
-      {showEvents && events.map((event, index) => (
-        <React.Fragment key={event.id}>
-          <h2>{index} - {event.title}</h2>
-          <button onClick={() => handleClick(event.id)}>delete event</button>
-        </React.Fragment>
-      ))}
+      {showEvents && <EventList events={events} handleClick={handleClick} />}
       
       {showModal && <Modal handleClose={handleClose}>
         <h2>Terms and Conditions</h2>
