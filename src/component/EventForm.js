@@ -12,6 +12,12 @@ export default function EventForm() {
 
   const handleSubmit = e => {
     e.preventDefault();
+
+    const event = {
+      title: title,
+      date: date,
+      id: Math.floor(Math.random() * 10000)
+    }
   }
 
 
