@@ -20,16 +20,13 @@ export default function App() {
     setEvents(preEvents => {
       return [...preEvents, event]
     })
+    setShowModal(false)
   }
 
   const handleClick = (id) => {
     setEvents(prevEvents => {
       return prevEvents.filter(event => id !== event.id)
     })
-  }
-
-  const handleClose = () => {
-    setShowModal(false)
   }
 
   const subtitle = "All the latest events in Marioland"
@@ -51,8 +48,8 @@ export default function App() {
       )}
       {showEvents && <EventList events={events} handleClick={handleClick} />}
       
-      {showModal && <Modal handleClose={handleClose} isSalesModal={true}>
-        <EventForm addEvent={addEvent} setShowModal={setShowModal} />
+      {showModal && <Modal isSalesModal={true}>
+        <EventForm addEvent={addEvent} />
       </Modal>}
       <div>
         <button className="show-modal-btn" onClick={() => setShowModal(true)}>Add new event</button>
