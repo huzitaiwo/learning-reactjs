@@ -11,6 +11,7 @@ export default function EventForm({ addEvent }) {
   const resetForm = () => {
     setTitle('')
     setDate('')
+    setLocation('manchester')
   }
 
   const handleSubmit = e => {
@@ -19,6 +20,7 @@ export default function EventForm({ addEvent }) {
       const event = {
         title: title,
         date: date,
+        location: location,
         id: Math.floor(Math.random() * 10000)
       }
 
@@ -54,7 +56,7 @@ export default function EventForm({ addEvent }) {
       </label>
       <label>
         <span>Event Location:</span>
-        <select onChange={}>
+        <select onChange={e => setLocation(e.target.value)}>
           <option value="manchester">Manschester</option>
           <option value="london">London</option>
           <option value="cardiff">Cardiff</option>
