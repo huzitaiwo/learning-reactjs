@@ -54,7 +54,7 @@ export default function App() {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis veniam quisquam doloribus beatae minima. Voluptatem atque ipsam accusantium excepturi, vel laudantium tempore temporibus unde molestiae natus.</p>
       </Modal>}
       <div>
-        <button className="show-modal-btn" onClick={() => setShowModal(true)}>show modal</button>
+        <button className="show-modal-btn" onClick={() => setShowModal(true)}>Add new event</button>
       </div>
     </div>
   )
