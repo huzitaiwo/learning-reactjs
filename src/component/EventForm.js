@@ -2,7 +2,7 @@ import './EventForm.css'
 
 export default function EventForm() {
   return (
-    <form>
+    <form className="event-form">
       <label>
         <span>Event Title:</span>
         <input type="text" />
