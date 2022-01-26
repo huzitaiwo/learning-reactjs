@@ -14,12 +14,13 @@ import './App.css'
 export default function App() {
   const [showModal, setShowModal] = useState(false)
   const [showEvents, setShowEvents] = useState([])
+  const [events, setEvents] = useState([])
 
-  const [events, setEvents] = useState([
-    {title: "mario's birthday bash", id: 1},
-    {title: "bowser's live stream", id: 2},
-    {title: "race on moo moo farm", id: 3}
-  ])
+  const addEvent = event => {
+    setEvents(preEvents => {
+      return [...preEvents, events]
+    })
+  }
 
   const handleClick = (id) => {
     setEvents(prevEvents => {
@@ -51,7 +52,7 @@ export default function App() {
       {showEvents && <EventList events={events} handleClick={handleClick} />}
       
       {showModal && <Modal handleClose={handleClose} isSalesModal={true}>
-        <EventForm />
+        <EventForm addEvent={addEvent} />
       </Modal>}
       <div>
         <button className="show-modal-btn" onClick={() => setShowModal(true)}>Add new event</button>

@@ -18,6 +18,10 @@ export default function EventForm() {
       date: date,
       id: Math.floor(Math.random() * 10000)
     }
+
+    resetForm()
+
+    console.log(event)
   }
 
 
@@ -39,7 +43,6 @@ export default function EventForm() {
           value={date}
         />
       </label>
-      <p>date- {date}, title- {title}</p>
       <button>Submit</button>
     </form> 
   )
