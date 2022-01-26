@@ -1,3 +1,10 @@
 .app {
   text-align: center;
 }
+.show-modal-btn {
+  padding: 5px 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}

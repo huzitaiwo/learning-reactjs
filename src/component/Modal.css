@@ -20,4 +20,6 @@
 .modal .sales-btn {
   padding: 5px 12px;
   text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
 }
