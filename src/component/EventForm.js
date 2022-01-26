@@ -52,6 +52,14 @@ export default function EventForm({ addEvent }) {
           ref={dateRef}
         />
       </label>
+      <label>
+        <span>Event Location:</span>
+        <select onChange={}>
+          <option value="manchester">Manschester</option>
+          <option value="london">London</option>
+          <option value="cardiff">Cardiff</option>
+        </select>
+      </label>
       <button>Submit</button>
     </form> 
   )
