@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import './EventForm.css'
 
 export default function EventForm({ addEvent }) {
   const [title, setTitle] = useState('')
   const [date, setDate] = useState('')
+  const titleRef = useRef()
+  const dateRef = useRef()
 
   const resetForm = () => {
     setTitle('')
@@ -12,15 +14,18 @@ export default function EventForm({ addEvent }) {
 
   const handleSubmit = e => {
     e.preventDefault();
+    if(titleRef.current.value && dateRef.current.value) {
+      const event = {
+        title: title,
+        date: date,
+        id: Math.floor(Math.random() * 10000)
+      }
 
-    const event = {
-      title: title,
-      date: date,
-      id: Math.floor(Math.random() * 10000)
+      addEvent(event)
+      resetForm()
+    } else {
+      console.log('invalid inputs')
     }
-
-    addEvent(event)
-    resetForm()
 
   }
 
@@ -33,6 +38,7 @@ export default function EventForm({ addEvent }) {
           type="text" 
           onChange={e => setTitle(e.target.value)}
           value={title}
+          ref={titleRef}
         />
       </label>
       <label>
@@ -41,6 +47,7 @@ export default function EventForm({ addEvent }) {
           type="date" 
           onChange={e => setDate(e.target.value)} 
           value={date}
+          ref={dateRef}
         />
       </label>
       <button>Submit</button>
