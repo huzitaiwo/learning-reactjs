@@ -10,9 +10,13 @@ export default function EventForm() {
     setDate('')
   }
 
+  const handleSubmit = e => {
+    e.preventDefault();
+  }
+
 
   return (
-    <form className="event-form">
+    <form className="event-form" onSubmit={handleSubmit}>
       <label>
         <span>Event Title:</span>
         <input 
