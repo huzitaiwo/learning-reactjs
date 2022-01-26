@@ -4,6 +4,7 @@ import './EventForm.css'
 export default function EventForm({ addEvent }) {
   const [title, setTitle] = useState('')
   const [date, setDate] = useState('')
+  const [location, setLocation] = useState()
   const titleRef = useRef()
   const dateRef = useRef()
 
@@ -23,6 +24,7 @@ export default function EventForm({ addEvent }) {
 
       addEvent(event)
       resetForm()
+
     } else {
       console.log('invalid inputs')
     }
