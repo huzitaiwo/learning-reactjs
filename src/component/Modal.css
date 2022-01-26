@@ -17,3 +17,7 @@
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
 }
+.modal .sales-btn {
+  padding: 5px 12px;
+  text-transform: uppercase;
+}
