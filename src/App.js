@@ -18,7 +18,7 @@ export default function App() {
 
   const addEvent = event => {
     setEvents(preEvents => {
-      return [...preEvents, events]
+      return [...preEvents, event]
     })
   }
 
@@ -52,7 +52,7 @@ export default function App() {
       {showEvents && <EventList events={events} handleClick={handleClick} />}
       
       {showModal && <Modal handleClose={handleClose} isSalesModal={true}>
-        <EventForm addEvent={addEvent} />
+        <EventForm addEvent={addEvent} setShowModal={setShowModal} />
       </Modal>}
       <div>
         <button className="show-modal-btn" onClick={() => setShowModal(true)}>Add new event</button>

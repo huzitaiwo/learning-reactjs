@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './EventForm.css'
 
-export default function EventForm({ addEvent }) {
+export default function EventForm({ addEvent, setShowModal }) {
   const [title, setTitle] = useState('')
   const [date, setDate] = useState('')
 
@@ -18,10 +18,11 @@ export default function EventForm({ addEvent }) {
       date: date,
       id: Math.floor(Math.random() * 10000)
     }
+    
     addEvent(event)
     resetForm()
+    setShowModal(false)
 
-    console.log(event)
   }
 
 
