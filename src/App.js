@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Modal from './component/Modal'
 import Title from './component/Title'
 import EventList from './component/EventList'
+import EventForm from './component/EventForm'
 
 // styles
 import './App.css'
@@ -50,8 +51,7 @@ export default function App() {
       {showEvents && <EventList events={events} handleClick={handleClick} />}
       
       {showModal && <Modal handleClose={handleClose} isSalesModal={true}>
-        <h2>Terms and Conditions</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis veniam quisquam doloribus beatae minima. Voluptatem atque ipsam accusantium excepturi, vel laudantium tempore temporibus unde molestiae natus.</p>
+        <EventForm />
       </Modal>}
       <div>
         <button className="show-modal-btn" onClick={() => setShowModal(true)}>Add new event</button>

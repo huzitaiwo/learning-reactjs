@@ -9,7 +9,7 @@ export default function EventForm() {
       </label>
       <label>
         <span>Event Date:</span>
-        <input type="text" />
+        <input type="date" />
       </label>
       <button>Submit</button>
     </form> 
