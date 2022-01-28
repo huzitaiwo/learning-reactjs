@@ -47,6 +47,7 @@ function App() {
         resetTurn()
       } else {
         console.log('card not match')
+        resetTurn()
       }
     }
   }, [choiceTwo, choiceOne])
