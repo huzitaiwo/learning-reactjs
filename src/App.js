@@ -43,10 +43,16 @@ function App() {
   useEffect(() => {
     if(choiceOne && choiceTwo) {
       if(choiceOne.src === choiceTwo.src) {
-        console.log('card matched')
+        setCards(prevCards => {
+          return prevCards.map(card => {
+            if(card.src === choiceTwo.src) {
+              return {...card, mathced: true}
+            }
+          })
+        })
         resetTurn()
       } else {
-        console.log('card not match')
+        
         resetTurn()
       }
     }
