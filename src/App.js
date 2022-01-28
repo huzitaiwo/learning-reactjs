@@ -30,6 +30,7 @@ function App() {
     setTurns(0)
   }
 
+
   const handleChoice = card => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card)
   }
@@ -45,7 +46,7 @@ function App() {
       if(choiceOne.src === choiceTwo.src) {
         setCards(prevCards => {
           return prevCards.map(card => {
-            if(card.src === choiceTwo.src) {
+            if(card.src === choiceOne.src) {
               return {...card, mathced: true}
             } else {
               return card
@@ -59,6 +60,8 @@ function App() {
       }
     }
   }, [choiceTwo, choiceOne])
+
+  console.log(cards)
 
 
   return (
