@@ -47,6 +47,8 @@ function App() {
           return prevCards.map(card => {
             if(card.src === choiceTwo.src) {
               return {...card, mathced: true}
+            } else {
+              return card
             }
           })
         })
