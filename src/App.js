@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import Card from './components/Card';
 
@@ -33,6 +33,16 @@ function App() {
   const handleChoice = card => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card)
   }
+
+  const resetTurn = () => {
+    setChoiceOne(null)
+    setChoiceTwo(null)
+    setTurns(prevTurns => prevTurns++)
+  }
+
+  useEffect(() => {
+
+  }, [])
 
 
   return (
