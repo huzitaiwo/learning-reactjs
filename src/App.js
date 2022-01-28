@@ -31,7 +31,7 @@ function App() {
   }
 
   const handleChoice = card => {
-    console.log(card)
+    choiceOne ? setChoiceTwo(card) : setChoiceOne(card)
   }
 
 
