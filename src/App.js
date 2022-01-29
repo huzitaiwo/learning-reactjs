@@ -40,9 +40,11 @@ function App() {
     setChoiceOne(null)
     setChoiceTwo(null)
     setTurns(prevTurns => prevTurns +1)
+    setDisabled(false)
   }
 
   useEffect(() => {
+    setDisabled(true)
     if(choiceOne && choiceTwo) {
       if(choiceOne.src === choiceTwo.src) {
         setCards(prevCards => {
