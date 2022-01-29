@@ -60,10 +60,7 @@ function App() {
       }
     }
   }, [choiceTwo, choiceOne])
-
-  console.log(cards, turns)
-
-
+  
   return (
     <div className="App">
       <h1>Magic Match</h1>
