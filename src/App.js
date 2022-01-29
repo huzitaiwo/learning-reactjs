@@ -38,7 +38,7 @@ function App() {
   const resetTurn = () => {
     setChoiceOne(null)
     setChoiceTwo(null)
-    setTurns(prevTurns => prevTurns++)
+    setTurns(prevTurns => prevTurns +1)
   }
 
   useEffect(() => {
@@ -56,12 +56,12 @@ function App() {
         resetTurn()
       } else {
         
-        resetTurn()
+        setTimeout(() => resetTurn(), 1000)
       }
     }
   }, [choiceTwo, choiceOne])
 
-  console.log(cards)
+  console.log(cards, turns)
 
 
   return (
