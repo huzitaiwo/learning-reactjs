@@ -70,7 +70,7 @@ function App() {
 
   // start a new game automagically
   useEffect(() => {
-    shuffleCards
+    shuffleCards()
   }, [])
 
   
@@ -89,7 +89,7 @@ function App() {
           />
         ))}
       </div>
-      <h3>{turns}</h3>
+      <h3>tturns: {turns}</h3>
     </div>
   );
 }
