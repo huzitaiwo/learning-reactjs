@@ -36,6 +36,7 @@ function App() {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card)
   }
 
+  // reset choices and increased turn
   const resetTurn = () => {
     setChoiceOne(null)
     setChoiceTwo(null)
