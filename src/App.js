@@ -89,7 +89,7 @@ function App() {
           />
         ))}
       </div>
-      <h3>tturns: {turns}</h3>
+      <h3>turns: {turns}</h3>
     </div>
   );
 }
