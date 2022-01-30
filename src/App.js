@@ -66,6 +66,11 @@ function App() {
     }
   }, [choiceTwo, choiceOne])
 
+  // start a new game automagically
+  useEffect(() => {
+    shuffleCards
+  }, [])
+
   
   return (
     <div className="App">
