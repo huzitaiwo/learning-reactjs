@@ -81,6 +81,7 @@ function App() {
           />
         ))}
       </div>
+      <h3>{turns}</h3>
     </div>
   );
 }
