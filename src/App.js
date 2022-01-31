@@ -1,10 +1,10 @@
 import "./App.css";
-import { BrowserRouter, Route, Switch, Link } from 'react'
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom'
 
 // page components
-import Home from 'pages/Home'
-import Contact from 'pages/Contact'
-import About from 'pages/About'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import About from './pages/About'
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-        </BrowserRouter>
+      </BrowserRouter>
     </div>
   );
 }
