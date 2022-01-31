@@ -14,7 +14,7 @@ export default function Article() {
       // redirect
       setTimeout(() => history.push('/'), 2000)
     }
-  }, [error])
+  }, [error, history])
 
 
   return (
