@@ -10,7 +10,7 @@ export default function Article() {
   useEffect(() => {
     if(error) {
       // redirect
-      history.push('/')
+      setTimeout(() => history.push('/'), 2000)
     }
   }, [error])
 
