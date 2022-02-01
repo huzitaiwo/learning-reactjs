@@ -14,7 +14,7 @@ function App() {
           <h2>My Articles</h2>
         </nav>
 
-        <Route path="/">
+        <Route exact path="/">
           <Home />
         </Route>
         <Route path="/contact">
