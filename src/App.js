@@ -12,7 +12,8 @@ function App() {
       <BrowserRouter>
         <nav>
           <h2>My Articles</h2>
-          <NavLink to="/">Home</NavLink>
+
+          <NavLink exact to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </nav>
