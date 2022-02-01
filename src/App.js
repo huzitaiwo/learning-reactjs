@@ -13,16 +13,17 @@ function App() {
         <nav>
           <h2>My Articles</h2>
         </nav>
-
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+        </Switch>
       </BrowserRouter>
     </div>
   );
