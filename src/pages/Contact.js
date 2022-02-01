@@ -1,6 +1,9 @@
 import { useLocation } from "react-router-dom"
 
 export default function Contact() {
+  const queryString = useLocation().search
+  console.log(queryString)
+
   return (
     <div>
       <h2>Contact</h2>
