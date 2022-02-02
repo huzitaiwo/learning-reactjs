@@ -9,7 +9,15 @@ export default function Article() {
 
   return (
     <div>
-      <h2>Article page - {id}</h2>
+      {isPending && <h3>Loading...</h3>}
+      {error && <h3>{error}</h3>}
+      {article && (
+        <div>
+          <h2>{article.title}</h2>
+          <p>{article.author}</p>
+          <p>{article.body}</p>
+        </div>
+      )}
     </div>
   )
 }
