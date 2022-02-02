@@ -1,34 +1,41 @@
 {
-  "articles": [
+  "recipes": [
     {
       "id": "1",
-      "title": "Welcome to the site",
-      "author": "Mario",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa quod cumque vel recusandae illum libero porro corporis odit ea enim deleniti, placeat obcaecati in perspiciatis, sed, assumenda magni alias. Facere error neque quo magnam! Expedita officiis quos architecto quae aperiam et, vel ea quam unde ad delectus ipsam accusamus molestiae, labore reiciendis mollitia fugit quasi praesentium inventore earum sint quis rem! Est amet, cum minus temporibus ratione asperiores perferendis natus nam dolorum provident facere dicta sequi consequuntur velit dolore molestias labore adipisci illum assumenda laudantium, recusandae dolor! Itaque, ratione suscipit molestias deleniti inventore accusantium quibusdam cumque pariatur quaerat dolorum doloribus nostrum, incidunt ipsam earum, veniam tenetur. Cum quaerat voluptate aliquam nulla ipsa. Eos aliquid sed consectetur modi, eaque autem eum molestiae placeat eveniet quos temporibus atque repudiandae consequuntur unde ad! Non deleniti pariatur sit laboriosam est quibusdam eius, et, numquam itaque veritatis nostrum commodi molestias inventore corporis repellat ipsam."
+      "title": "Veggie Stew",
+      "ingredients": [
+        "1 Carrot",
+        "1 Leek",
+        "200g Tofu",
+        "300ml Veg stock"
+      ],
+      "method": "1. Pre-heat the oven to 200C/3C/gas 5. Place the carrot, leek and tofu in a large bowl. Add the stock and mix well. 2. Add the rest of the ingredients and mix well. 3. Place the mixture in a large bowl and cover with a lid. 4. Place the lid on the oven and cook for 40 minutes. 5. Serve with a slaw of your choice",
+      "cookingTime": "45 minutes"
     },
     {
       "id": "2",
-      "title": "5 React Tips for Beginners",
-      "author": "Luigi",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa quod cumque vel recusandae illum libero porro corporis odit ea enim deleniti, placeat obcaecati in perspiciatis, sed, assumenda magni alias. Facere error neque quo magnam! Expedita officiis quos architecto quae aperiam et, vel ea quam unde ad delectus ipsam accusamus molestiae, labore reiciendis mollitia fugit quasi praesentium inventore earum sint quis rem! Est amet, cum minus temporibus ratione asperiores perferendis natus nam dolorum provident facere dicta sequi consequuntur velit dolore molestias labore adipisci illum assumenda laudantium, recusandae dolor! Itaque, ratione suscipit molestias deleniti inventore accusantium quibusdam cumque pariatur quaerat dolorum doloribus nostrum, incidunt ipsam earum, veniam tenetur. Cum quaerat voluptate aliquam nulla ipsa. Eos aliquid sed consectetur modi, eaque autem eum molestiae placeat eveniet quos temporibus atque repudiandae consequuntur unde ad! Non deleniti pariatur sit laboriosam est quibusdam eius, et, numquam itaque veritatis nostrum commodi molestias inventore corporis repellat ipsam."
+      "title": "Veggie Pizza",
+      "ingredients": [
+        "1 Base",
+        "Tomata pasata",
+        "1 Green pepper",
+        "100g Mushrooms"
+      ],
+      "method": "1. Pre-heat the oven to 200C/3C/gas 5. Add the pasata, green pepper and mushrooms to the base. Place the lid on the oven and cook for 30 minutes. 5. Serve with a slaw of your choice",
+      "cookingTime": "35 minutes"
     },
     {
       "id": "3",
-      "title": "Vs Code Best Packages",
-      "author": "Mario",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa quod cumque vel recusandae illum libero porro corporis odit ea enim deleniti, placeat obcaecati in perspiciatis, sed, assumenda magni alias. Facere error neque quo magnam! Expedita officiis quos architecto quae aperiam et, vel ea quam unde ad delectus ipsam accusamus molestiae, labore reiciendis mollitia fugit quasi praesentium inventore earum sint quis rem! Est amet, cum minus temporibus ratione asperiores perferendis natus nam dolorum provident facere dicta sequi consequuntur velit dolore molestias labore adipisci illum assumenda laudantium, recusandae dolor! Itaque, ratione suscipit molestias deleniti inventore accusantium quibusdam cumque pariatur quaerat dolorum doloribus nostrum, incidunt ipsam earum, veniam tenetur. Cum quaerat voluptate aliquam nulla ipsa. Eos aliquid sed consectetur modi, eaque autem eum molestiae placeat eveniet quos temporibus atque repudiandae consequuntur unde ad! Non deleniti pariatur sit laboriosam est quibusdam eius, et, numquam itaque veritatis nostrum commodi molestias inventore corporis repellat ipsam."
-    },
-    {
-      "id": "4",
-      "title": "UX Learning",
-      "author": "Handsome",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa quod cumque vel recusandae illum libero porro corporis odit ea enim deleniti, placeat obcaecati in perspiciatis, sed, assumenda magni alias. Facere error neque quo magnam! Expedita officiis quos architecto quae aperiam et, vel ea quam unde ad delectus ipsam accusamus molestiae, labore reiciendis mollitia fugit quasi praesentium inventore earum sint quis rem! Est amet, cum minus temporibus ratione asperiores perferendis natus nam dolorum provident facere dicta sequi consequuntur velit dolore molestias labore adipisci illum assumenda laudantium, recusandae dolor! Itaque, ratione suscipit molestias deleniti inventore accusantium quibusdam cumque pariatur quaerat dolorum doloribus nostrum, incidunt ipsam earum, veniam tenetur. Cum quaerat voluptate aliquam nulla ipsa. Eos aliquid sed consectetur modi, eaque autem eum molestiae placeat eveniet quos temporibus atque repudiandae consequuntur unde ad! Non deleniti pariatur sit laboriosam est quibusdam eius, et, numquam itaque veritatis nostrum commodi molestias inventore corporis repellat ipsam."
-    },
-    {
-      "id": "5",
-      "title": "Build 3D Blender Games",
-      "author": "Warwick",
-      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa quod cumque vel recusandae illum libero porro corporis odit ea enim deleniti, placeat obcaecati in perspiciatis, sed, assumenda magni alias. Facere error neque quo magnam! Expedita officiis quos architecto quae aperiam et, vel ea quam unde ad delectus ipsam accusamus molestiae, labore reiciendis mollitia fugit quasi praesentium inventore earum sint quis rem! Est amet, cum minus temporibus ratione asperiores perferendis natus nam dolorum provident facere dicta sequi consequuntur velit dolore molestias labore adipisci illum assumenda laudantium, recusandae dolor! Itaque, ratione suscipit molestias deleniti inventore accusantium quibusdam cumque pariatur quaerat dolorum doloribus nostrum, incidunt ipsam earum, veniam tenetur. Cum quaerat voluptate aliquam nulla ipsa. Eos aliquid sed consectetur modi, eaque autem eum molestiae placeat eveniet quos temporibus atque repudiandae consequuntur unde ad! Non deleniti pariatur sit laboriosam est quibusdam eius, et, numquam itaque veritatis nostrum commodi molestias inventore corporis repellat ipsam."
+      "title": "Greek Salad",
+      "ingredients": [
+        "1 Onion",
+        "1 Block of Feta",
+        "Olives",
+        "Tomatoes",
+        "Olive Oil"
+      ],
+      "method": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minima ex rem quis similique eum ratione quaerat, voluptas molestias ut repudiandae delectus voluptates. Eius esse at tenetur ab accusamus excepturi?",
+      "cookingTime": "35 minutes"
     }
   ]
 }

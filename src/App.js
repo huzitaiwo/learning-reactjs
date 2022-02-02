@@ -12,33 +12,6 @@ import Article from './pages/Article'
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <nav>
-          <h2>My Articles</h2>
-
-          <NavLink exact to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
-        </nav>
-        
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/articles/:id">
-            <Article />
-          </Route>
-          <Route path="*">
-            <Redirect to="/" />
-          </Route>
-        </Switch>
-      </BrowserRouter>
     </div>
   );
 }
