@@ -16,7 +16,7 @@ export default function Home() {
         <div key={article.id} className='card'>
           <h3>{article.title}</h3>
           <p>{article.author}</p>
-          <Link to={`/articles/${article.id}`}></Link>
+          <Link to={`/articles/${article.id}`}>more...</Link>
         </div>
       ))}
     </div>
