@@ -14,6 +14,18 @@ export default function Trip() {
 
 
   return (
-    <h1>Trip List</h1>
+    <div>
+      <h2>Trip List</h2>
+
+      <ul>
+        {trips.map(trip => {
+          <li key={trip.id}>
+            <h3>{trip.title}</h3>
+            <p>{trip.price}</p>
+          </li>
+        })}
+      </ul>
+
+    </div>
   )
 }
