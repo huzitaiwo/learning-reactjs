@@ -9,8 +9,13 @@ export default function Create() {
   const [cookingTime, setCookingTime] = useState('')
   const [ingredients, setIngredients] = useState('')
 
+  const handleClick = e => {
+    e.preventDefault()
+    console.log(title, method, cookingTime)
+  }
+
   return (
-    <form>
+    <form onClick={handleClick}>
       <label>
         <span>title:</span>
         <input 
@@ -22,7 +27,7 @@ export default function Create() {
       <label>
         <span>cooking time:</span>
         <input 
-        type="text"
+        type="number"
         onChange={e => setCookingTime(e.target.value)}
         value={cookingTime}
       />
@@ -31,10 +36,11 @@ export default function Create() {
         <span>method:</span>
         <input 
         type="text"
-        onChange={e => setTitle(e.target.value)}
-        value={title}
+        onChange={e => setMethod(e.target.value)}
+        value={method}
       />
       </label>
+      <button>submit</button>
     </form>
   )
 }
