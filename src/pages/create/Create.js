@@ -19,6 +19,22 @@ export default function Create() {
         value={title}
       />
       </label>
+      <label>
+        <span>cooking time:</span>
+        <input 
+        type="text"
+        onChange={e => setCookingTime(e.target.value)}
+        value={cookingTime}
+      />
+      </label>
+      <label>
+        <span>method:</span>
+        <input 
+        type="text"
+        onChange={e => setTitle(e.target.value)}
+        value={title}
+      />
+      </label>
     </form>
   )
 }
