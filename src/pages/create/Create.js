@@ -15,7 +15,8 @@ export default function Create() {
         <span>title:</span>
         <input 
         type="text"
-
+        onChange={e => setTitle(e.target.value)}
+        value={title}
       />
       </label>
     </form>
