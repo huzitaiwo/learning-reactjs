@@ -9,13 +9,13 @@ export default function Create() {
   const [cookingTime, setCookingTime] = useState('')
   const [ingredients, setIngredients] = useState('')
 
-  const handleClick = e => {
+  const handleSubmit = e => {
     e.preventDefault()
     console.log(title, method, cookingTime)
   }
 
   return (
-    <form onClick={handleClick}>
+    <form onSubmit={handleSubmit}>
       <label>
         <span>title:</span>
         <input 
