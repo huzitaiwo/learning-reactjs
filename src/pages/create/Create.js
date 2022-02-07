@@ -10,10 +10,16 @@ export default function Create() {
 
   const handleSubmit = e => {
     e.preventDefault()
-    setTitle('')
-    setMethod('')
-    setCookingTime('')
+    const recipe = {title, method, cookingTime}
+
+    console.log(recipe)
   }
+
+  // const resetForm = () => {
+  //   setTitle('')
+  //   setMethod('')
+  //   setCookingTime('')
+  // }
 
   return (
     <form onSubmit={handleSubmit}>
