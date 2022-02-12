@@ -22,7 +22,7 @@ export default function Create() {
   // }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='create' onSubmit={handleSubmit}>
       <label>
         <span>title:</span>
         <input 
