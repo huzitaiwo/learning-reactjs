@@ -29,7 +29,16 @@ export default function Create() {
         type="text"
         onChange={e => setTitle(e.target.value)}
         value={title}
+        required
       />
+      </label>
+      <label>
+        <span>method:</span>
+        <textarea 
+        onChange={e => setMethod(e.target.value)}
+        value={method}
+        required
+        />
       </label>
       <label>
         <span>cooking time:</span>
@@ -37,15 +46,7 @@ export default function Create() {
         type="number"
         onChange={e => setCookingTime(e.target.value)}
         value={cookingTime}
-      />
-      </label>
-      <label>
-        <span>method:</span>
-        <input 
-        type="text"
-        onChange={e => setMethod(e.target.value)}
-        value={method}
-      />
+        />
       </label>
       <button className='btn'>submit</button>
     </form>
