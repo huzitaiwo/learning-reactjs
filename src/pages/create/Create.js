@@ -23,6 +23,7 @@ export default function Create() {
 
   return (
     <form className='create' onSubmit={handleSubmit}>
+
       <label>
         <span>title:</span>
         <input 
@@ -32,6 +33,15 @@ export default function Create() {
         required
       />
       </label>
+
+      <label>
+        <span>Recipe ingredients</span>
+        <div className="ingredients">
+          <input type="text" />
+          <button className='btn'>add</button>
+        </div>
+      </label>
+
       <label>
         <span>method:</span>
         <textarea 
@@ -40,6 +50,7 @@ export default function Create() {
         required
         />
       </label>
+
       <label>
         <span>cooking time:</span>
         <input 
