@@ -13,7 +13,7 @@ export default function Create() {
 
   const handleSubmit = e => {
     e.preventDefault()
-    const recipe = {title, method, cookingTime}
+    const recipe = {title, method, cookingTime, ingredients}
 
     console.log(recipe)
   }
