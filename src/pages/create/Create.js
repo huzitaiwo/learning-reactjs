@@ -46,6 +46,7 @@ export default function Create() {
         type="number"
         onChange={e => setCookingTime(e.target.value)}
         value={cookingTime}
+        required
         />
       </label>
       <button className='btn'>submit</button>
