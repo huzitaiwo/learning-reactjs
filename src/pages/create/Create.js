@@ -26,6 +26,7 @@ export default function Create() {
       setIngredients(prevIngredients => [...prevIngredients, ing])
     }
     setNewIngredient('')
+    ingredientInput.current.focus()
   }
 
   // const resetForm = () => {
@@ -54,6 +55,7 @@ export default function Create() {
             type="text"
             onChange={e => setNewIngredient(e.target.value)}
             value={newIngredient}
+            ref={ingredientInput}
           />
           <button className='btn' onClick={handleAdd}>add</button>
         </div>
