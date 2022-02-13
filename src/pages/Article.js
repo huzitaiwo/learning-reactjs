@@ -6,6 +6,12 @@ export default function Article() {
   const url = 'http://localhost:4000/articles/' + id
   const {data: article, isPending, error } = useFetch(url)
 
+  useEffect(() => {
+    if(error) {
+      // redirect
+    }
+  }, [error])
+
 
   return (
     <div>
