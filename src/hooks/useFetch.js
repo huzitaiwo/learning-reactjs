@@ -50,13 +50,13 @@ export const useFetch = (url, method = "GET") => {
       fetchData()
     }
     if(method === "POST" && options) {
-
+      fetchData(options)
     }
 
     return () => {
       controller.abort()
     }
-  }, [url])
+  }, [url, options, method])
 
   return { data, isPending, error, postData }
 
