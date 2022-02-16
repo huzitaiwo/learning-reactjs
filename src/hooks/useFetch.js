@@ -53,6 +53,6 @@ export const useFetch = (url, method = "GET") => {
     }
   }, [url])
 
-  return { data, isPending, error }
+  return { data, isPending, error, postData }
 
 }
