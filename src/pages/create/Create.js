@@ -35,7 +35,7 @@ export default function Create() {
   // redirect user when we get data response 
   useEffect(() => {
     if(data) {
-    history.push('/')
+      history.push('/')
     }
   }, [data])
 
