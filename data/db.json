@@ -46,6 +46,27 @@
       "method": "cooking",
       "cookingTime": "35 minutes",
       "id": "1mY1oI9"
+    },
+    {
+      "title": "vieggie pie",
+      "ingredients": [
+        "tofu",
+        "leks",
+        "mushrooms"
+      ],
+      "method": "blah, blah",
+      "cookingTime": "34 minutes",
+      "id": "O7K2qSo"
+    },
+    {
+      "title": "coffe",
+      "ingredients": [
+        "coffe",
+        "sugar"
+      ],
+      "method": "make coffee",
+      "cookingTime": "2 minutes",
+      "id": "4By7fSu"
     }
   ]
 }
