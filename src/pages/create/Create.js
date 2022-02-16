@@ -34,7 +34,7 @@ export default function Create() {
     <form className='create' onSubmit={handleSubmit}>
 
       <label>
-        <span>title:</span>
+        <span>Recipe title:</span>
         <input 
         type="text"
         onChange={e => setTitle(e.target.value)}
@@ -58,7 +58,7 @@ export default function Create() {
       <p>Current ingredients: {ingredients && ingredients.map(i => <em key={i}>{i}, </em>)}</p>
 
       <label>
-        <span>method:</span>
+        <span>Recipe method:</span>
         <textarea 
         onChange={e => setMethod(e.target.value)}
         value={method}
@@ -67,7 +67,7 @@ export default function Create() {
       </label>
 
       <label>
-        <span>cooking time:</span>
+        <span>cooking time: (minutes)</span>
         <input 
         type="number"
         onChange={e => setCookingTime(e.target.value)}
