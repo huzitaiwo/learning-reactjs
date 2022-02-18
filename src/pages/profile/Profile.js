@@ -8,7 +8,7 @@ export default function Profile() {
   const { data, error, isPending } = useFetch('https://api.github.com/search/users?q=lagos&page=1')
 
 //   const profiles = data.items
-  console.log(data.items)
+//   console.log(data.items)
   
 
   return (
