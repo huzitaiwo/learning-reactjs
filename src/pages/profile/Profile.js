@@ -1,8 +1,12 @@
-// styles
+import { useFetch } from '../../hooks/useFetch'
 
-import React from 'react'
+// styles
+import './Profile.css'
+
 
 export default function Profile() {
+  const { data: pofiles, error, isPending } = useFetch
+
   return (
     <div>Profile</div>
   )
