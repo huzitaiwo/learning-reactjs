@@ -16,7 +16,7 @@ export default function Profile() {
       {isPending && <h2>Loading...</h2>}
       {profiles && profiles.map(profile => (
         <div key={profile.id} className='card'>
-          {/* <img src={profile.avatar_url} alt="" /> */}
+          <img src={profile.avatar_url} alt="" />
           <p>{profile.login}</p>
           <p>{profile.score}</p>
         </div>
