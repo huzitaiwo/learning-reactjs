@@ -1,27 +1,22 @@
-import { useFetch } from '../../hooks/useFetch'
-
-// styles
-import './Profile.css'
-
-
-export default function Profile() {
-  const { data, error, isPending } = useFetch('https://api.github.com/search/users?q=lagos&page=1')
-
-//   const profiles = data.items
-//   console.log(data.items)
-  
-
+import React, { useState } from 'react';
+ 
+function App() {
+  const [userList, setUserList] = useState([]);
+ 
   return (
-    <div className='profile'>
-      {error && <h2>{error}</h2>}
-      {isPending && <h2>Loading...</h2>}
-      {data.items && data.items.map(profile => (
-        <div key={profile.id} className='card'>
-          <img src={profile.avatar_url} alt="" />
-          <p>{profile.login}</p>
-          <p>{profile.score}</p>
+    <div className="App">
+      <h3>Load more pagination in React - <a href="https://www.cluemediator.com" target="_blank" rel="noopener noreferrer">Clue Mediator</a></h3>
+      {userList.map((x, i) => {
+        return <div key={i} className="box">
+          <img src={x.avatar} />
+          <div className="name">{x.first_name} {x.last_name}</div>
+          <div className="email">{x.email}</div>
         </div>
-      ))}
+      })}
+      <div className="clearfix"></div>
+      <button className="btn-load-more">Load More</button>
     </div>
-  )
+  );
 }
+ 
+export default App;
