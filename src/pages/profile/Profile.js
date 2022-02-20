@@ -33,7 +33,7 @@ useEffect(() => {
         </div>
       })}
       <div className="clearfix"></div>
-      <button className="btn-load-more">Load More</button>
+      {totalPages !== page && <button className="btn-load-more" onClick={() => setPage(page + 1)}>{loading ? 'Loading...' : 'Load More'}</button>}
     </div>
   );
 }
