@@ -1,7 +1,26 @@
 import React, { useState } from 'react';
  
 function App() {
-  const [userList, setUserList] = useState([]);
+const perPage = 3;
+const [totalPages, setTotalPages] = useState(1);
+const [page, setPage] = useState(1);
+ 
+const [userList, setUserList] = useState([]);
+const [loading, setLoading] = useState(false);
+ 
+useEffect(() => {
+  const getUserList = () => {
+    setLoading(true);
+    fetch(`https://reqres.in/api/users?per_page=${perPage}&page=${page}`)
+      .then(res => res.json())
+      .then(res => {
+        setTotalPages(res.total_pages);
+        setUserList([...userList, ...res.data]);
+        setLoading(false);
+      });
+  }
+  getUserList();
+}, [page]);
  
   return (
     <div className="App">
