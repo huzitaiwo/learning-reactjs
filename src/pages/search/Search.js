@@ -1,6 +1,7 @@
+import { useLocation } from 'react-router-dom'
+import { useFetch } from '../../hooks/useFetch'
 
 // styles
-import { useLocation } from 'react-router-dom'
 import './Search.css'
 
 export default function Search() {
