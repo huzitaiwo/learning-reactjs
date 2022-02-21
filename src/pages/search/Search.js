@@ -8,6 +8,8 @@ export default function Search() {
   const queryParams = new URLSearchParams(queryString)
   const query = queryParams.get('q')
 
+  const url = 'http://localhost:4000/recipes?q=' + query;
+
   return (
     <div>Search</div>
   )
