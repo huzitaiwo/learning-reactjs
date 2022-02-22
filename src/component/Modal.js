@@ -1,3 +1,5 @@
+import reactDom from 'react-dom'
+
 // styles
 import './Modal.css'
 
