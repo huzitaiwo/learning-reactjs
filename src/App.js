@@ -9,7 +9,6 @@ import Recipe from './pages/recipe/Recipe'
 import Search from './pages/search/Search'
 import Create from './pages/create/Create'
 import Navbar from "./components/Navbar"
-import Profile from "./pages/profile/Profile"
 
 function App() {
   return (
@@ -25,9 +24,6 @@ function App() {
           </Route>
           <Route path="/search">
             <Search />
-          </Route>
-          <Route path="/profile">
-            <Profile />
           </Route>
           <Route path="/recipes/:id">
             <Recipe />
