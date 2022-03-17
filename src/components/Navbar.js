@@ -8,11 +8,11 @@ import './Navbar.css'
 import Searchbar from './Searchbar'
 
 export default function Navbar() {
-  const { color } = useTheme()
+  const { color, changeColor } = useTheme()
 
   return (
     <div className='navbar' style={{ background: color }}>
-      <nav>
+      <nav onClick={() => changeColor('pink')}>
         <Link className='brand' to="/">
           <h1>Cooking Ninja</h1>
         </Link>
